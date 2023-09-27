@@ -1,0 +1,8 @@
+{
+    "apiDocs": true,
+    "modelDocs": true,
+    "bestFitInt": true,
+    "packageName": "fattureincloud-rs",
+    "preferUnsignedInt": true,
+    "supportAsync": true
+}

@@ -2,11 +2,8 @@ name: Generate Rust SDK
 on: [workflow_dispatch]
 
 jobs:
-  generate-typescript-sdk:
+  generate-rust-sdk:
     runs-on: ubuntu-latest
-    env:
-      GIT_REPO_ID: fattureincloud-ts-sdk
-      GIT_USER_ID: fattureincloud
     steps:
 
       - id: checkout
@@ -19,3 +16,4 @@ jobs:
         with:
           generator: rust
           openapi-url: https://github.com/fattureincloud/openapi-fattureincloud/raw/master/openapi-enriched.yaml
+          config-file: openapi-config.json
