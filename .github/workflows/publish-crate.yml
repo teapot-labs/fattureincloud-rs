@@ -1,0 +1,25 @@
+name: Publish SDK Crate
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths:
+          - 'backend/**'
+
+jobs:
+    publish-crate:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+        steps:
+             - uses: actions/checkout@v3
+             - uses: actions-rs/toolchain@v1
+               with:
+                   toolchain: stable
+                   override: true
+             - uses: katyo/publish-crates@v2
+               with:
+                    path: './rust-client'
+                    dry-run: true
+                    registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
