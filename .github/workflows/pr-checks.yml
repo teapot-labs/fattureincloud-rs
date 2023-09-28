@@ -1,0 +1,117 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [ master ]
+    paths:
+    - 'rust-client/**'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+    toolchain:
+        name: ⚒️ Toolchain
+        runs-on: ubuntu-latest
+        steps:
+          - name: ⚒️ Toolchain Info
+            run: |
+              cargo --version --verbose
+              rustc --version
+              cargo clippy --version
+
+    lint:
+        name: 💡 Lint
+        needs: toolchain
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🛒 Checkout
+              uses: actions/checkout@v4
+
+            - name: ⚡ Cache
+              uses: actions/cache@v3
+              with:
+                path: |
+                  ~/.cargo/bin/
+                  ~/.cargo/registry/index/
+                  ~/.cargo/registry/cache/
+                  ~/.cargo/git/db/
+                  target
+                key: ${{ runner.os }}-cargo-${{ hashFiles('rust-client/Cargo.lock') }}
+
+            - name: 💡 Lint
+              run: |
+                cd rust-client
+                cargo fmt --all -- --check
+
+    clippy:
+        name: 📎 Clippy
+        needs: toolchain
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🛒 Checkout
+              uses: actions/checkout@v4
+
+            - name: ⚡ Cache
+              uses: actions/cache@v3
+              with:
+                path: |
+                  ~/.cargo/bin/
+                  ~/.cargo/registry/index/
+                  ~/.cargo/registry/cache/
+                  ~/.cargo/git/db/
+                  target
+                key: ${{ runner.os }}-cargo-${{ hashFiles('rust-client/Cargo.lock') }}
+
+            - name: 📎 Clippy
+              run: |
+                cd rust-client
+                cargo clippy --
+
+    build:
+        name: 🔨 Build
+        needs: toolchain
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🛒 Checkout
+              uses: actions/checkout@v4
+
+            - name: ⚡ Cache
+              uses: actions/cache@v3
+              with:
+                path: |
+                  ~/.cargo/bin/
+                  ~/.cargo/registry/index/
+                  ~/.cargo/registry/cache/
+                  ~/.cargo/git/db/
+                  target
+                key: ${{ runner.os }}-cargo-${{ hashFiles('rust-client/Cargo.lock') }}
+
+            - name: 🔨 Build
+              run: |
+                cd rust-client
+                cargo build
+
+    test:
+        name: 🧪 Test
+        needs: toolchain
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🛒 Checkout
+              uses: actions/checkout@v4
+
+            - name: ⚡ Cache
+              uses: actions/cache@v3
+              with:
+                path: |
+                  ~/.cargo/bin/
+                  ~/.cargo/registry/index/
+                  ~/.cargo/registry/cache/
+                  ~/.cargo/git/db/
+                  target
+                key: ${{ runner.os }}-cargo-${{ hashFiles('rust-client/Cargo.lock') }}
+
+            - name: 🧪 Test
+              run: |
+                cd rust-client
+                cargo test --all
