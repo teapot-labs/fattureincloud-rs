@@ -2,7 +2,7 @@ name: Check OpenAPI Spec Update
 
 on:
     schedule:
-    - cron:  '0 10 * * *'
+    - cron:  '0 0 * * 1'
     workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
               echo "RUST_CLIENT_VERSION=$RUST_CLIENT_VERSION" >> $GITHUB_ENV
 
           - id: download-openapi-spec
-            name: Download a file
+            name: Download FattureInCloud OpenAPI spec file
             run: wget https://github.com/fattureincloud/openapi-fattureincloud/raw/master/openapi-enriched.yaml -O fattureincloud-openapi.yaml
 
           - id: read-new-openapi-version
@@ -41,3 +41,9 @@ jobs:
                echo "release_changed=false" >> $GITHUB_OUTPUT
                echo "Release changed: false"
              fi
+
+          - name: Trigger Client Generation
+            if: ${{ env.release_changed == true }}
+            uses: peter-evans/repository-dispatch@v2
+            with:
+                event-type: update

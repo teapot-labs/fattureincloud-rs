@@ -1,5 +1,8 @@
 name: Generate Rust FattureInCloud Client
-on: [workflow_dispatch]
+on:
+  repository_dispatch:
+    types: [update]
+  workflow_dispatch:
 
 jobs:
   generate-rust-sdk:
