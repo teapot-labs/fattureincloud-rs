@@ -19,7 +19,7 @@ jobs:
             name: Read Rust Client Version
             run: |
               RUST_CLIENT_VERSION=$(yq e '.package.version' ./rust-client/Cargo.toml)
-              echo "rust_client_version=$RUST_CLIENT_VERSION" >> $GITHUB_ENV
+              echo "RUST_CLIENT_VERSION=$RUST_CLIENT_VERSION" >> $GITHUB_ENV
 
           - id: download-openapi-spec
             name: Download a file
@@ -29,12 +29,12 @@ jobs:
             name: Read New OpenAPI Version
             run: |
               OPENAPI_VERSION=$(yq e '.info.version' ./fattureincloud-openapi.yaml)
-              echo "openapi_version=$OPENAPI_VERSION" >> $GITHUB_ENV
+              echo "OPENAPI_VERSION=$OPENAPI_VERSION" >> $GITHUB_ENV
 
           - id: compare-release
             name: Compare with previous release
             run: |
-             if [ "${{ steps.read-rust-client-version.RUST_CLIENT_VERSION }}" != "${{ steps.read-new-openapi-version.OPENAPI_VERSION }}" ]; then
+             if [ "${{ env.RUST_CLIENT_VERSION }}" != "${{ env.OPENAPI_VERSION }}" ]; then
                echo "release_changed=true" >> $GITHUB_OUTPUT
                echo "Release changed: true"
              else
