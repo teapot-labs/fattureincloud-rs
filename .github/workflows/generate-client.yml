@@ -42,7 +42,7 @@ jobs:
         name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          branch: "rename-me"
+          branch: "client-${{ env.openapi_version }}"
           delete-branch: true
           commit-message: "chore: bumping version to ${{ env.openapi_version }}"
           title: "Updating FattureInCloud client to ${{ env.openapi_version }}"
