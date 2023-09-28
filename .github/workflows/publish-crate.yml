@@ -2,10 +2,10 @@ name: Publish SDK Crate
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ master ]
-    paths:
-          - 'rust-client/**'
+  ##push:
+  ##  branches: [ master ]
+  ##  paths:
+  ##        - 'rust-client/**'
 
 jobs:
     publish-crate:
