@@ -1,0 +1,27 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base",
+        ":rebaseStalePrs",
+        ":enablePreCommit",
+        ":semanticCommits"
+    ],
+    "assignees": [
+        "ferrohd"
+    ],
+    "dependencyDashboard": true,
+    "automerge": true,
+    "major": {
+        "automerge": false
+    },
+    "packageRules": [
+        {
+            "groupName": "GitHub Actions",
+            "matchManagers": [
+                "github-actions"
+            ]
+        }
+    ],
+    "prConcurrentLimit": 0,
+    "prHourlyLimit": 0
+}
