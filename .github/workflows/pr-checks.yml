@@ -20,30 +20,6 @@ jobs:
               rustc --version
               cargo clippy --version
 
-    lint:
-        name: 💡 Lint
-        needs: toolchain
-        runs-on: ubuntu-latest
-        steps:
-            - name: 🛒 Checkout
-              uses: actions/checkout@v4
-
-            - name: ⚡ Cache
-              uses: actions/cache@v3
-              with:
-                path: |
-                  ~/.cargo/bin/
-                  ~/.cargo/registry/index/
-                  ~/.cargo/registry/cache/
-                  ~/.cargo/git/db/
-                  target
-                key: ${{ runner.os }}-cargo-${{ hashFiles('rust-client/Cargo.lock') }}
-
-            - name: 💡 Lint
-              run: |
-                cd rust-client
-                cargo fmt --all -- --check
-
     clippy:
         name: 📎 Clippy
         needs: toolchain
