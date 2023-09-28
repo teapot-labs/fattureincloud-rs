@@ -20,9 +20,7 @@
             "matchManagers": [
                 "cargo"
             ],
-            "matchUpdateTypes": [
-                "minor"
-            ]
+            "enabled": true
         },
         {
             "groupName": "GitHub Actions",
