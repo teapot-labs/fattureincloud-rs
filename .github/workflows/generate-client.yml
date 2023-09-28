@@ -27,6 +27,11 @@ jobs:
           openapi-file: fattureincloud-openapi.yaml
           config-file: openapi-config.json
 
+      - id: set-authors
+        name: Set Cargo Authors
+        run: |
+          yq -i 'package.authors[0] = "Alessandro Ferrara"' ./rust-client/Cargo.toml
+
       - id: read-openapi-version
         name: Read OpenAPI Version
         run: |
