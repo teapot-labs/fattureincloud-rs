@@ -16,6 +16,15 @@
     },
     "packageRules": [
         {
+            "groupName": "Cargo Dependencies",
+            "matchManagers": [
+                "cargo"
+            ],
+            "matchUpdateTypes": [
+                "minor"
+            ]
+        },
+        {
             "groupName": "GitHub Actions",
             "matchManagers": [
                 "github-actions"
