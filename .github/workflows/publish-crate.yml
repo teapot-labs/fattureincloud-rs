@@ -19,5 +19,4 @@ jobs:
                with:
                     path: './rust-client'
                     ignore-unpublished-changes: true
-                    dry-run: true
                     registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
