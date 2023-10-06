@@ -28,7 +28,7 @@ jobs:
           config-file: openapi-config.json
 
       - id: set-repository
-        name: Set Cargo Authors
+        name: Set Repository
         run: |
           yq -i '.package.repository = "https://github.com/teapot-labs/fattureincloud-rs/"' ./rust-client/Cargo.toml
 
