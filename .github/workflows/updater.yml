@@ -34,16 +34,11 @@ jobs:
           - id: compare-release
             name: Compare with previous release
             run: |
-             if [ "${{ env.RUST_CLIENT_VERSION }}" != "${{ env.OPENAPI_VERSION }}" ]; then
-               echo "release_changed=true" >> $GITHUB_OUTPUT
-               echo "Release changed: true"
-             else
-               echo "release_changed=false" >> $GITHUB_OUTPUT
-               echo "Release changed: false"
-             fi
+             echo "RELEASE_CHANGED=${{ env.RUST_CLIENT_VERSION }}" != "${{ env.OPENAPI_VERSION }}" >> "$GITHUB_ENV" \
+             echo "release_changed=${RELEASE_CHANGED}"
 
           - name: Trigger Client Generation
-            if: ${{ env.release_changed == true }}
+            if: ${{ env.RELEASE_CHANGED == true }}
             uses: peter-evans/repository-dispatch@v2
             with:
                 event-type: update
