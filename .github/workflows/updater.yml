@@ -31,14 +31,9 @@ jobs:
               OPENAPI_VERSION=$(yq e '.info.version' ./fattureincloud-openapi.yaml)
               echo "OPENAPI_VERSION=$OPENAPI_VERSION" >> $GITHUB_ENV
 
-          - id: compare-release
-            name: Compare with previous release
-            run: |
-             echo "RELEASE_CHANGED=${{ env.RUST_CLIENT_VERSION }}" != "${{ env.OPENAPI_VERSION }}" >> "$GITHUB_ENV" \
-             echo "release_changed=${RELEASE_CHANGED}"
-
-          - name: Trigger Client Generation
-            if: ${{ env.RELEASE_CHANGED == true }}
+          - id: trigger-client-generation
+            name: Trigger Client Generation
+            if: ${{ env.RUST_CLIENT_VERSION != env.OPENAPI_VERSION }}
             uses: peter-evans/repository-dispatch@v2
             with:
                 event-type: update
