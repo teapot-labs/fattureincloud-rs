@@ -27,10 +27,14 @@ jobs:
           openapi-file: fattureincloud-openapi.yaml
           config-file: openapi-config.json
 
+      - id: install-toml-cli
+        name: Install Toml
+        run: cargo install toml-cli
+
       - id: set-repository
         name: Set Repository
         run: |
-          yq -i '.package.repository = "https://github.com/teapot-labs/fattureincloud-rs/"' ./rust-client/Cargo.toml
+          toml set ./rust-client/Cargo.toml package.repository https://github.com/teapot-labs/fattureincloud-rs/
 
       - id: read-openapi-version
         name: Read OpenAPI Version
