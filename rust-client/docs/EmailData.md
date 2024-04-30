@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **recipient_email** | Option<**String**> | Email recipient | [optional]
-**default_sender_email** | Option<[**crate::models::EmailDataDefaultSenderEmail**](EmailData_default_sender_email.md)> |  | [optional]
-**sender_emails_list** | Option<[**Vec<crate::models::SenderEmail>**](SenderEmail.md)> | List of all emails from which the document can be sent | [optional]
+**default_sender_email** | Option<[**models::EmailDataDefaultSenderEmail**](EmailData_default_sender_email.md)> |  | [optional]
+**sender_emails_list** | Option<[**Vec<models::SenderEmail>**](SenderEmail.md)> | List of all emails from which the document can be sent | [optional]
 **cc_email** | Option<**String**> | Email cc [by default is the logged company email] | [optional]
 **subject** | Option<**String**> | Email subject | [optional]
 **body** | Option<**String**> | Email body | [optional]

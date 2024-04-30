@@ -10,20 +10,20 @@ Method | HTTP request | Description
 [**get_email_data**](IssuedDocumentsApi.md#get_email_data) | **GET** /c/{company_id}/issued_documents/{document_id}/email | Get Email Data
 [**get_existing_issued_document_totals**](IssuedDocumentsApi.md#get_existing_issued_document_totals) | **POST** /c/{company_id}/issued_documents/{document_id}/totals | Get Existing Issued Document Totals
 [**get_issued_document**](IssuedDocumentsApi.md#get_issued_document) | **GET** /c/{company_id}/issued_documents/{document_id} | Get Issued Document
-[**get_issued_document_pre_create_info**](IssuedDocumentsApi.md#get_issued_document_pre_create_info) | **GET** /c/{company_id}/issued_documents/info | Get Issued Document Pre-create info
+[**get_issued_document_pre_create_info**](IssuedDocumentsApi.md#get_issued_document_pre_create_info) | **GET** /c/{company_id}/issued_documents/info | Get Issued Document Pre-Create Info
 [**get_new_issued_document_totals**](IssuedDocumentsApi.md#get_new_issued_document_totals) | **POST** /c/{company_id}/issued_documents/totals | Get New Issued Document Totals
-[**join_issued_documents**](IssuedDocumentsApi.md#join_issued_documents) | **GET** /c/{company_id}/issued_documents/join | Join issued documents
+[**join_issued_documents**](IssuedDocumentsApi.md#join_issued_documents) | **GET** /c/{company_id}/issued_documents/join | Join Issued Documents
 [**list_issued_documents**](IssuedDocumentsApi.md#list_issued_documents) | **GET** /c/{company_id}/issued_documents | List Issued Documents
 [**modify_issued_document**](IssuedDocumentsApi.md#modify_issued_document) | **PUT** /c/{company_id}/issued_documents/{document_id} | Modify Issued Document
 [**schedule_email**](IssuedDocumentsApi.md#schedule_email) | **POST** /c/{company_id}/issued_documents/{document_id}/email | Schedule Email
-[**transform_issued_document**](IssuedDocumentsApi.md#transform_issued_document) | **GET** /c/{company_id}/issued_documents/transform | Transform issued document
+[**transform_issued_document**](IssuedDocumentsApi.md#transform_issued_document) | **GET** /c/{company_id}/issued_documents/transform | Transform Issued Document
 [**upload_issued_document_attachment**](IssuedDocumentsApi.md#upload_issued_document_attachment) | **POST** /c/{company_id}/issued_documents/attachment | Upload Issued Document Attachment
 
 
 
 ## create_issued_document
 
-> crate::models::CreateIssuedDocumentResponse create_issued_document(company_id, create_issued_document_request)
+> models::CreateIssuedDocumentResponse create_issued_document(company_id, create_issued_document_request)
 Create Issued Document
 
 Creates a new document.
@@ -38,7 +38,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateIssuedDocumentResponse**](CreateIssuedDocumentResponse.md)
+[**models::CreateIssuedDocumentResponse**](CreateIssuedDocumentResponse.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_email_data
 
-> crate::models::GetEmailDataResponse get_email_data(company_id, document_id)
+> models::GetEmailDataResponse get_email_data(company_id, document_id)
 Get Email Data
 
 Gets the pre-compiled email details.
@@ -131,7 +131,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetEmailDataResponse**](GetEmailDataResponse.md)
+[**models::GetEmailDataResponse**](GetEmailDataResponse.md)
 
 ### Authorization
 
@@ -147,7 +147,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_existing_issued_document_totals
 
-> crate::models::GetExistingIssuedDocumentTotalsResponse get_existing_issued_document_totals(company_id, document_id, get_existing_issued_document_totals_request)
+> models::GetExistingIssuedDocumentTotalsResponse get_existing_issued_document_totals(company_id, document_id, get_existing_issued_document_totals_request)
 Get Existing Issued Document Totals
 
 Returns the totals for a specified document.
@@ -163,7 +163,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetExistingIssuedDocumentTotalsResponse**](GetExistingIssuedDocumentTotalsResponse.md)
+[**models::GetExistingIssuedDocumentTotalsResponse**](GetExistingIssuedDocumentTotalsResponse.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_issued_document
 
-> crate::models::GetIssuedDocumentResponse get_issued_document(company_id, document_id, fields, fieldset)
+> models::GetIssuedDocumentResponse get_issued_document(company_id, document_id, fields, fieldset)
 Get Issued Document
 
 Gets the specified document. 
@@ -196,7 +196,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetIssuedDocumentResponse**](GetIssuedDocumentResponse.md)
+[**models::GetIssuedDocumentResponse**](GetIssuedDocumentResponse.md)
 
 ### Authorization
 
@@ -212,8 +212,8 @@ Name | Type | Description  | Required | Notes
 
 ## get_issued_document_pre_create_info
 
-> crate::models::GetIssuedDocumentPreCreateInfoResponse get_issued_document_pre_create_info(company_id, r#type)
-Get Issued Document Pre-create info
+> models::GetIssuedDocumentPreCreateInfoResponse get_issued_document_pre_create_info(company_id, r#type)
+Get Issued Document Pre-Create Info
 
 Retrieves the information useful while creating a new document.
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetIssuedDocumentPreCreateInfoResponse**](GetIssuedDocumentPreCreateInfoResponse.md)
+[**models::GetIssuedDocumentPreCreateInfoResponse**](GetIssuedDocumentPreCreateInfoResponse.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_new_issued_document_totals
 
-> crate::models::GetNewIssuedDocumentTotalsResponse get_new_issued_document_totals(company_id, get_new_issued_document_totals_request)
+> models::GetNewIssuedDocumentTotalsResponse get_new_issued_document_totals(company_id, get_new_issued_document_totals_request)
 Get New Issued Document Totals
 
 Returns the totals for a new document.
@@ -258,7 +258,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetNewIssuedDocumentTotalsResponse**](GetNewIssuedDocumentTotalsResponse.md)
+[**models::GetNewIssuedDocumentTotalsResponse**](GetNewIssuedDocumentTotalsResponse.md)
 
 ### Authorization
 
@@ -274,8 +274,8 @@ Name | Type | Description  | Required | Notes
 
 ## join_issued_documents
 
-> crate::models::JoinIssuedDocumentsResponse join_issued_documents(company_id, ids, group, e_invoice)
-Join issued documents
+> models::JoinIssuedDocumentsResponse join_issued_documents(company_id, ids, group, e_invoice)
+Join Issued Documents
 
 Joins issued documents.
 
@@ -291,7 +291,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JoinIssuedDocumentsResponse**](JoinIssuedDocumentsResponse.md)
+[**models::JoinIssuedDocumentsResponse**](JoinIssuedDocumentsResponse.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_issued_documents
 
-> crate::models::ListIssuedDocumentsResponse list_issued_documents(company_id, r#type, fields, fieldset, sort, page, per_page, q, inclusive)
+> models::ListIssuedDocumentsResponse list_issued_documents(company_id, r#type, fields, fieldset, sort, page, per_page, q, inclusive)
 List Issued Documents
 
 Lists the issued documents.
@@ -329,7 +329,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListIssuedDocumentsResponse**](ListIssuedDocumentsResponse.md)
+[**models::ListIssuedDocumentsResponse**](ListIssuedDocumentsResponse.md)
 
 ### Authorization
 
@@ -345,7 +345,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_issued_document
 
-> crate::models::ModifyIssuedDocumentResponse modify_issued_document(company_id, document_id, modify_issued_document_request)
+> models::ModifyIssuedDocumentResponse modify_issued_document(company_id, document_id, modify_issued_document_request)
 Modify Issued Document
 
 Modifies the specified document.
@@ -361,7 +361,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyIssuedDocumentResponse**](ModifyIssuedDocumentResponse.md)
+[**models::ModifyIssuedDocumentResponse**](ModifyIssuedDocumentResponse.md)
 
 ### Authorization
 
@@ -409,8 +409,8 @@ Name | Type | Description  | Required | Notes
 
 ## transform_issued_document
 
-> crate::models::TransformIssuedDocumentResponse transform_issued_document(company_id, original_document_id, new_type, e_invoice, transform_keep_copy)
-Transform issued document
+> models::TransformIssuedDocumentResponse transform_issued_document(company_id, original_document_id, new_type, e_invoice, transform_keep_copy)
+Transform Issued Document
 
 Transforms the document.
 
@@ -427,7 +427,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TransformIssuedDocumentResponse**](TransformIssuedDocumentResponse.md)
+[**models::TransformIssuedDocumentResponse**](TransformIssuedDocumentResponse.md)
 
 ### Authorization
 
@@ -443,7 +443,7 @@ Name | Type | Description  | Required | Notes
 
 ## upload_issued_document_attachment
 
-> crate::models::UploadIssuedDocumentAttachmentResponse upload_issued_document_attachment(company_id, filename, attachment)
+> models::UploadIssuedDocumentAttachmentResponse upload_issued_document_attachment(company_id, filename, attachment)
 Upload Issued Document Attachment
 
 Uploads an attachment destined to an issued document. The actual association between the document and the attachment must be implemented separately, using the returned token.
@@ -459,7 +459,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UploadIssuedDocumentAttachmentResponse**](UploadIssuedDocumentAttachmentResponse.md)
+[**models::UploadIssuedDocumentAttachmentResponse**](UploadIssuedDocumentAttachmentResponse.md)
 
 ### Authorization
 

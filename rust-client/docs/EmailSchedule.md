@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **recipient_email** | **String** | Email recipient emails [comma separated] | 
 **subject** | **String** | Email subject | 
 **body** | **String** | Email body [HTML Escaped] [max size 50KiB] | 
-**include** | [**crate::models::EmailScheduleInclude**](EmailSchedule_include.md) |  | 
+**include** | [**models::EmailScheduleInclude**](EmailSchedule_include.md) |  | 
 **attach_pdf** | **bool** | Attach the pdf of the document | 
 **send_copy** | **bool** | Send a copy of the email to the **cc_email** specified by **Get email data** | 
 

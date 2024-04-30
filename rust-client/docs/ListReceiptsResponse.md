@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **prev_page_url** | Option<**String**> | Previous page url. | [optional]
 **to** | Option<**i32**> | Last result of the page. | [optional]
 **total** | Option<**i32**> | Total number of results | [optional]
-**data** | Option<[**Vec<crate::models::Receipt>**](Receipt.md)> |  | [optional]
+**data** | Option<[**Vec<models::Receipt>**](Receipt.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

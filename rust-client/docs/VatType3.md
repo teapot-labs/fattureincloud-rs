@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | Option<**i32**> | Vat type id | [optional]
-**value** | **f32** | [Read Only] Vat type percentual value | 
+**value** | **f64** | [Read Only] Vat type percentual value | 
 **description** | Option<**String**> | Vat type short description | [optional]
 **notes** | Option<**String**> | Vat type notes shown in documents | [optional]
 **e_invoice** | Option<**bool**> | Vat type is usable for e-invoices | [optional]

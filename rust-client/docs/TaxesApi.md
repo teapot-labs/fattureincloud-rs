@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 ## create_f24
 
-> crate::models::CreateF24Response create_f24(company_id, create_f24_request)
+> models::CreateF24Response create_f24(company_id, create_f24_request)
 Create F24
 
 Creates a new F24.
@@ -31,7 +31,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateF24Response**](CreateF24Response.md)
+[**models::CreateF24Response**](CreateF24Response.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_f24
 
-> crate::models::GetF24Response get_f24(company_id, document_id, fields, fieldset)
+> models::GetF24Response get_f24(company_id, document_id, fields, fieldset)
 Get F24
 
 Gets the specified F24.
@@ -126,7 +126,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetF24Response**](GetF24Response.md)
+[**models::GetF24Response**](GetF24Response.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_f24
 
-> crate::models::ListF24Response list_f24(company_id, fields, fieldset, sort, page, per_page, q)
+> models::ListF24Response list_f24(company_id, fields, fieldset, sort, page, per_page, q)
 List F24
 
 Lists the F24s.
@@ -162,7 +162,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListF24Response**](ListF24Response.md)
+[**models::ListF24Response**](ListF24Response.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_f24
 
-> crate::models::ModifyF24Response modify_f24(company_id, document_id, modify_f24_request)
+> models::ModifyF24Response modify_f24(company_id, document_id, modify_f24_request)
 Modify F24
 
 Modifies the specified F24.
@@ -194,7 +194,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyF24Response**](ModifyF24Response.md)
+[**models::ModifyF24Response**](ModifyF24Response.md)
 
 ### Authorization
 
@@ -210,7 +210,7 @@ Name | Type | Description  | Required | Notes
 
 ## upload_f24_attachment
 
-> crate::models::UploadF24AttachmentResponse upload_f24_attachment(company_id, filename, attachment)
+> models::UploadF24AttachmentResponse upload_f24_attachment(company_id, filename, attachment)
 Upload F24 Attachment
 
 Uploads an attachment destined to a F24. The actual association between the document and the attachment must be implemented separately, using the returned token.
@@ -226,7 +226,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UploadF24AttachmentResponse**](UploadF24AttachmentResponse.md)
+[**models::UploadF24AttachmentResponse**](UploadF24AttachmentResponse.md)
 
 ### Authorization
 

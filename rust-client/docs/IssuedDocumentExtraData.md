@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **show_sofort_button** | Option<**bool**> |  | [optional]
 **multifatture_sent** | Option<**i32**> |  | [optional]
 **ts_communication** | Option<**bool**> | Send issued document to \"Sistema Tessera Sanitaria\" | [optional]
-**ts_flag_tipo_spesa** | Option<**f32**> | Issued document ts \"tipo spesa\" [TK, FC, FV, SV,SP, AD, AS, ECG, SR] | [optional]
+**ts_flag_tipo_spesa** | Option<**f64**> | Issued document ts \"tipo spesa\" [TK, FC, FV, SV,SP, AD, AS, ECG, SR] | [optional]
 **ts_pagamento_tracciato** | Option<**bool**> | Issued document ts traced payment | [optional]
 **ts_tipo_spesa** | Option<**String**> | Can be [ 'TK', 'FC', 'FV', 'SV', 'SP', 'AD', 'AS', 'SR', 'CT', 'PI', 'IC', 'AA' ]. Refer to the technical specifications to learn more. | [optional]
 **ts_opposizione** | Option<**bool**> | Issued document ts \"opposizione\" | [optional]

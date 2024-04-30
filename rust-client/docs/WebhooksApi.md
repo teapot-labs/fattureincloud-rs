@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## create_webhooks_subscription
 
-> crate::models::CreateWebhooksSubscriptionResponse create_webhooks_subscription(company_id, create_webhooks_subscription_request)
+> models::CreateWebhooksSubscriptionResponse create_webhooks_subscription(company_id, create_webhooks_subscription_request)
 Create a Webhook Subscription
 
 Register some webhooks Subscriptions.
@@ -29,7 +29,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateWebhooksSubscriptionResponse**](CreateWebhooksSubscriptionResponse.md)
+[**models::CreateWebhooksSubscriptionResponse**](CreateWebhooksSubscriptionResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_webhooks_subscription
 
-> crate::models::GetWebhooksSubscriptionResponse get_webhooks_subscription(company_id, subscription_id)
+> models::GetWebhooksSubscriptionResponse get_webhooks_subscription(company_id, subscription_id)
 Get Webhooks Subscription
 
 Get a webhooks subscription.
@@ -91,7 +91,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetWebhooksSubscriptionResponse**](GetWebhooksSubscriptionResponse.md)
+[**models::GetWebhooksSubscriptionResponse**](GetWebhooksSubscriptionResponse.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_webhooks_subscriptions
 
-> crate::models::ListWebhooksSubscriptionsResponse list_webhooks_subscriptions(company_id)
+> models::ListWebhooksSubscriptionsResponse list_webhooks_subscriptions(company_id)
 List Webhooks Subscriptions
 
 List active webhooks subscriptions.
@@ -121,7 +121,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListWebhooksSubscriptionsResponse**](ListWebhooksSubscriptionsResponse.md)
+[**models::ListWebhooksSubscriptionsResponse**](ListWebhooksSubscriptionsResponse.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_webhooks_subscription
 
-> crate::models::CreateWebhooksSubscriptionRequest1 modify_webhooks_subscription(company_id, subscription_id, modify_webhooks_subscription_request)
+> models::CreateWebhooksSubscriptionRequest1 modify_webhooks_subscription(company_id, subscription_id, modify_webhooks_subscription_request)
 Modify Webhooks Subscription
 
 Edit a webhooks subscription.
@@ -153,7 +153,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateWebhooksSubscriptionRequest1**](CreateWebhooksSubscriptionRequest_1.md)
+[**models::CreateWebhooksSubscriptionRequest1**](CreateWebhooksSubscriptionRequest_1.md)
 
 ### Authorization
 
