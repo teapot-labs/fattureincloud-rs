@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## create_product
 
-> crate::models::CreateProductResponse create_product(company_id, create_product_request)
+> models::CreateProductResponse create_product(company_id, create_product_request)
 Create Product
 
 Creates a new product.
@@ -29,7 +29,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateProductResponse**](CreateProductResponse.md)
+[**models::CreateProductResponse**](CreateProductResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_product
 
-> crate::models::GetProductResponse get_product(company_id, product_id, fields, fieldset)
+> models::GetProductResponse get_product(company_id, product_id, fields, fieldset)
 Get Product
 
 Gets the specified product.
@@ -93,7 +93,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetProductResponse**](GetProductResponse.md)
+[**models::GetProductResponse**](GetProductResponse.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_products
 
-> crate::models::ListProductsResponse list_products(company_id, fields, fieldset, sort, page, per_page, q)
+> models::ListProductsResponse list_products(company_id, fields, fieldset, sort, page, per_page, q)
 List Products
 
 Lists the products.
@@ -129,7 +129,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListProductsResponse**](ListProductsResponse.md)
+[**models::ListProductsResponse**](ListProductsResponse.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_product
 
-> crate::models::ModifyProductResponse modify_product(company_id, product_id, modify_product_request)
+> models::ModifyProductResponse modify_product(company_id, product_id, modify_product_request)
 Modify Product
 
 Modifies the specified product.
@@ -161,7 +161,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyProductResponse**](ModifyProductResponse.md)
+[**models::ModifyProductResponse**](ModifyProductResponse.md)
 
 ### Authorization
 

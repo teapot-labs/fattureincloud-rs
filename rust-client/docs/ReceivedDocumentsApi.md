@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 ## create_received_document
 
-> crate::models::CreateReceivedDocumentResponse create_received_document(company_id, create_received_document_request)
+> models::CreateReceivedDocumentResponse create_received_document(company_id, create_received_document_request)
 Create Received Document
 
 Creates a new document.
@@ -34,7 +34,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateReceivedDocumentResponse**](CreateReceivedDocumentResponse.md)
+[**models::CreateReceivedDocumentResponse**](CreateReceivedDocumentResponse.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_existing_received_document_totals
 
-> crate::models::GetExistingReceivedDocumentTotalsResponse get_existing_received_document_totals(company_id, document_id, get_existing_received_document_totals)
+> models::GetExistingReceivedDocumentTotalsResponse get_existing_received_document_totals(company_id, document_id, get_existing_received_document_totals)
 Get Existing Received Document Totals
 
 Returns the totals for the specified document.
@@ -128,7 +128,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetExistingReceivedDocumentTotalsResponse**](GetExistingReceivedDocumentTotalsResponse.md)
+[**models::GetExistingReceivedDocumentTotalsResponse**](GetExistingReceivedDocumentTotalsResponse.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_new_received_document_totals
 
-> crate::models::GetNewReceivedDocumentTotalsResponse get_new_received_document_totals(company_id, get_new_received_document_totals_request)
+> models::GetNewReceivedDocumentTotalsResponse get_new_received_document_totals(company_id, get_new_received_document_totals_request)
 Get New Received Document Totals
 
 Returns the totals for a new document.
@@ -159,7 +159,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetNewReceivedDocumentTotalsResponse**](GetNewReceivedDocumentTotalsResponse.md)
+[**models::GetNewReceivedDocumentTotalsResponse**](GetNewReceivedDocumentTotalsResponse.md)
 
 ### Authorization
 
@@ -175,7 +175,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_received_document
 
-> crate::models::GetReceivedDocumentResponse get_received_document(company_id, document_id, fields, fieldset)
+> models::GetReceivedDocumentResponse get_received_document(company_id, document_id, fields, fieldset)
 Get Received Document
 
 Gets the specified document.
@@ -192,7 +192,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetReceivedDocumentResponse**](GetReceivedDocumentResponse.md)
+[**models::GetReceivedDocumentResponse**](GetReceivedDocumentResponse.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_received_document_pre_create_info
 
-> crate::models::GetReceivedDocumentPreCreateInfoResponse get_received_document_pre_create_info(company_id, r#type)
+> models::GetReceivedDocumentPreCreateInfoResponse get_received_document_pre_create_info(company_id, r#type)
 Get Received Document Pre-Create Info
 
 Retrieves the information useful while creating a new document.
@@ -223,7 +223,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetReceivedDocumentPreCreateInfoResponse**](GetReceivedDocumentPreCreateInfoResponse.md)
+[**models::GetReceivedDocumentPreCreateInfoResponse**](GetReceivedDocumentPreCreateInfoResponse.md)
 
 ### Authorization
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_received_documents
 
-> crate::models::ListReceivedDocumentsResponse list_received_documents(company_id, r#type, fields, fieldset, sort, page, per_page, q)
+> models::ListReceivedDocumentsResponse list_received_documents(company_id, r#type, fields, fieldset, sort, page, per_page, q)
 List Received Documents
 
 Lists the received documents.
@@ -260,7 +260,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListReceivedDocumentsResponse**](ListReceivedDocumentsResponse.md)
+[**models::ListReceivedDocumentsResponse**](ListReceivedDocumentsResponse.md)
 
 ### Authorization
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_received_document
 
-> crate::models::ModifyReceivedDocumentResponse modify_received_document(company_id, document_id, modify_received_document_request)
+> models::ModifyReceivedDocumentResponse modify_received_document(company_id, document_id, modify_received_document_request)
 Modify Received Document
 
 Modifies the specified document.
@@ -292,7 +292,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyReceivedDocumentResponse**](ModifyReceivedDocumentResponse.md)
+[**models::ModifyReceivedDocumentResponse**](ModifyReceivedDocumentResponse.md)
 
 ### Authorization
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Required | Notes
 
 ## upload_received_document_attachment
 
-> crate::models::UploadReceivedDocumentAttachmentResponse upload_received_document_attachment(company_id, filename, attachment)
+> models::UploadReceivedDocumentAttachmentResponse upload_received_document_attachment(company_id, filename, attachment)
 Upload Received Document Attachment
 
 Uploads an attachment destined to a received document. The actual association between the document and the attachment must be implemented separately, using the returned token.
@@ -324,7 +324,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UploadReceivedDocumentAttachmentResponse**](UploadReceivedDocumentAttachmentResponse.md)
+[**models::UploadReceivedDocumentAttachmentResponse**](UploadReceivedDocumentAttachmentResponse.md)
 
 ### Authorization
 

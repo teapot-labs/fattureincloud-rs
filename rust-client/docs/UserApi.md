@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## get_user_info
 
-> crate::models::GetUserInfoResponse get_user_info()
+> models::GetUserInfoResponse get_user_info()
 Get User Info
 
 Gets the current user's info.
@@ -22,7 +22,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::GetUserInfoResponse**](GetUserInfoResponse.md)
+[**models::GetUserInfoResponse**](GetUserInfoResponse.md)
 
 ### Authorization
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ## list_user_companies
 
-> crate::models::ListUserCompaniesResponse list_user_companies()
+> models::ListUserCompaniesResponse list_user_companies()
 List User Companies
 
 Lists the companies controlled by the current user.
@@ -49,7 +49,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListUserCompaniesResponse**](ListUserCompaniesResponse.md)
+[**models::ListUserCompaniesResponse**](ListUserCompaniesResponse.md)
 
 ### Authorization
 

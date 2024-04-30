@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 ## list_archive_categories
 
-> crate::models::ListArchiveCategoriesResponse list_archive_categories(company_id)
+> models::ListArchiveCategoriesResponse list_archive_categories(company_id)
 List Archive Categories
 
 Lists the archive categories.
@@ -39,7 +39,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListArchiveCategoriesResponse**](ListArchiveCategoriesResponse.md)
+[**models::ListArchiveCategoriesResponse**](ListArchiveCategoriesResponse.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_cities
 
-> crate::models::ListCitiesResponse list_cities(postal_code, city)
+> models::ListCitiesResponse list_cities(postal_code, city)
 List Cities
 
 Lists the Italian cities.
@@ -70,7 +70,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListCitiesResponse**](ListCitiesResponse.md)
+[**models::ListCitiesResponse**](ListCitiesResponse.md)
 
 ### Authorization
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_cost_centers
 
-> crate::models::ListCostCentersResponse list_cost_centers(company_id)
+> models::ListCostCentersResponse list_cost_centers(company_id)
 List Cost Centers
 
 Lists the cost centers.
@@ -100,7 +100,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListCostCentersResponse**](ListCostCentersResponse.md)
+[**models::ListCostCentersResponse**](ListCostCentersResponse.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_countries
 
-> crate::models::ListCountriesResponse list_countries()
+> models::ListCountriesResponse list_countries()
 List Countries
 
 Lists the supported countries.
@@ -127,7 +127,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListCountriesResponse**](ListCountriesResponse.md)
+[**models::ListCountriesResponse**](ListCountriesResponse.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ This endpoint does not need any parameter.
 
 ## list_currencies
 
-> crate::models::ListCurrenciesResponse list_currencies()
+> models::ListCurrenciesResponse list_currencies()
 List Currencies
 
 Lists the supported currencies.
@@ -154,7 +154,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListCurrenciesResponse**](ListCurrenciesResponse.md)
+[**models::ListCurrenciesResponse**](ListCurrenciesResponse.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ This endpoint does not need any parameter.
 
 ## list_delivery_notes_default_causals
 
-> crate::models::ListDeliveryNotesDefaultCasualsResponse list_delivery_notes_default_causals()
+> models::ListDeliveryNotesDefaultCasualsResponse list_delivery_notes_default_causals()
 List Delivery Notes Default Causals
 
 Lists the delivery note default causals.
@@ -181,7 +181,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListDeliveryNotesDefaultCasualsResponse**](ListDeliveryNotesDefaultCasualsResponse.md)
+[**models::ListDeliveryNotesDefaultCasualsResponse**](ListDeliveryNotesDefaultCasualsResponse.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ This endpoint does not need any parameter.
 
 ## list_detailed_countries
 
-> crate::models::ListDetailedCountriesResponse list_detailed_countries()
+> models::ListDetailedCountriesResponse list_detailed_countries()
 List Detailed Countries
 
 Lists the supported countries.
@@ -208,7 +208,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListDetailedCountriesResponse**](ListDetailedCountriesResponse.md)
+[**models::ListDetailedCountriesResponse**](ListDetailedCountriesResponse.md)
 
 ### Authorization
 
@@ -224,7 +224,7 @@ This endpoint does not need any parameter.
 
 ## list_languages
 
-> crate::models::ListLanguagesResponse list_languages()
+> models::ListLanguagesResponse list_languages()
 List Languages
 
 Lists the supported languages.
@@ -235,7 +235,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListLanguagesResponse**](ListLanguagesResponse.md)
+[**models::ListLanguagesResponse**](ListLanguagesResponse.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ This endpoint does not need any parameter.
 
 ## list_payment_accounts
 
-> crate::models::ListPaymentAccountsResponse list_payment_accounts(company_id, fields, fieldset, sort)
+> models::ListPaymentAccountsResponse list_payment_accounts(company_id, fields, fieldset, sort)
 List Payment Accounts
 
 Lists the available payment accounts.
@@ -268,7 +268,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListPaymentAccountsResponse**](ListPaymentAccountsResponse.md)
+[**models::ListPaymentAccountsResponse**](ListPaymentAccountsResponse.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_payment_methods
 
-> crate::models::ListPaymentMethodsResponse list_payment_methods(company_id, fields, fieldset, sort)
+> models::ListPaymentMethodsResponse list_payment_methods(company_id, fields, fieldset, sort)
 List Payment Methods
 
 Lists the available payment methods.
@@ -301,7 +301,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListPaymentMethodsResponse**](ListPaymentMethodsResponse.md)
+[**models::ListPaymentMethodsResponse**](ListPaymentMethodsResponse.md)
 
 ### Authorization
 
@@ -317,7 +317,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_product_categories
 
-> crate::models::ListProductCategoriesResponse list_product_categories(company_id, context)
+> models::ListProductCategoriesResponse list_product_categories(company_id, context)
 List Product Categories
 
 Lists the product categories.
@@ -328,11 +328,11 @@ Lists the product categories.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **company_id** | **i32** | The ID of the company. | [required] |
-**context** | **String** |  | [required] |
+**context** | **String** | Categories resource type. | [required] |
 
 ### Return type
 
-[**crate::models::ListProductCategoriesResponse**](ListProductCategoriesResponse.md)
+[**models::ListProductCategoriesResponse**](ListProductCategoriesResponse.md)
 
 ### Authorization
 
@@ -348,7 +348,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_received_document_categories
 
-> crate::models::ListReceivedDocumentCategoriesResponse list_received_document_categories(company_id)
+> models::ListReceivedDocumentCategoriesResponse list_received_document_categories(company_id)
 List Received Document Categories
 
 Lists the received document categories.
@@ -362,7 +362,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListReceivedDocumentCategoriesResponse**](ListReceivedDocumentCategoriesResponse.md)
+[**models::ListReceivedDocumentCategoriesResponse**](ListReceivedDocumentCategoriesResponse.md)
 
 ### Authorization
 
@@ -378,7 +378,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_revenue_centers
 
-> crate::models::ListRevenueCentersResponse list_revenue_centers(company_id)
+> models::ListRevenueCentersResponse list_revenue_centers(company_id)
 List Revenue Centers
 
 Lists the revenue centers.
@@ -392,7 +392,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListRevenueCentersResponse**](ListRevenueCentersResponse.md)
+[**models::ListRevenueCentersResponse**](ListRevenueCentersResponse.md)
 
 ### Authorization
 
@@ -408,7 +408,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_templates
 
-> crate::models::ListTemplatesResponse list_templates(r#type, by_type)
+> models::ListTemplatesResponse list_templates(r#type, by_type)
 List Templates
 
 Lists the available templates.
@@ -423,7 +423,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListTemplatesResponse**](ListTemplatesResponse.md)
+[**models::ListTemplatesResponse**](ListTemplatesResponse.md)
 
 ### Authorization
 
@@ -439,7 +439,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_units_of_measure
 
-> crate::models::ListUnitsOfMeasureResponse list_units_of_measure()
+> models::ListUnitsOfMeasureResponse list_units_of_measure()
 List Units of Measure
 
 Lists the units of measure.
@@ -450,7 +450,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ListUnitsOfMeasureResponse**](ListUnitsOfMeasureResponse.md)
+[**models::ListUnitsOfMeasureResponse**](ListUnitsOfMeasureResponse.md)
 
 ### Authorization
 
@@ -466,7 +466,7 @@ This endpoint does not need any parameter.
 
 ## list_vat_types
 
-> crate::models::ListVatTypesResponse list_vat_types(company_id, fieldset)
+> models::ListVatTypesResponse list_vat_types(company_id, fieldset)
 List Vat Types
 
 Lists the available vat types.
@@ -481,7 +481,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListVatTypesResponse**](ListVatTypesResponse.md)
+[**models::ListVatTypesResponse**](ListVatTypesResponse.md)
 
 ### Authorization
 

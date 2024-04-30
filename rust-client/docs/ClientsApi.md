@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## create_client
 
-> crate::models::CreateClientResponse create_client(company_id, create_client_request)
+> models::CreateClientResponse create_client(company_id, create_client_request)
 Create Client
 
 Creates a new client.
@@ -29,7 +29,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateClientResponse**](CreateClientResponse.md)
+[**models::CreateClientResponse**](CreateClientResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_client
 
-> crate::models::GetClientResponse get_client(company_id, client_id, fields, fieldset)
+> models::GetClientResponse get_client(company_id, client_id, fields, fieldset)
 Get Client
 
 Gets the specified client.
@@ -93,7 +93,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetClientResponse**](GetClientResponse.md)
+[**models::GetClientResponse**](GetClientResponse.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_clients
 
-> crate::models::ListClientsResponse list_clients(company_id, fields, fieldset, sort, page, per_page, q)
+> models::ListClientsResponse list_clients(company_id, fields, fieldset, sort, page, per_page, q)
 List Clients
 
 Lists the clients.
@@ -129,7 +129,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListClientsResponse**](ListClientsResponse.md)
+[**models::ListClientsResponse**](ListClientsResponse.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_client
 
-> crate::models::ModifyClientResponse modify_client(company_id, client_id, modify_client_request)
+> models::ModifyClientResponse modify_client(company_id, client_id, modify_client_request)
 Modify Client
 
 Modifies the specified client.
@@ -161,7 +161,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyClientResponse**](ModifyClientResponse.md)
+[**models::ModifyClientResponse**](ModifyClientResponse.md)
 
 ### Authorization
 

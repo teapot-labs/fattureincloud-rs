@@ -4,17 +4,17 @@ All URIs are relative to *https://api-v2.fattureincloud.it*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_e_invoice_rejection_reason**](IssuedEInvoicesApi.md#get_e_invoice_rejection_reason) | **GET** /c/{company_id}/issued_documents/{document_id}/e_invoice/error_reason | Get e-invoice rejection reason
-[**get_e_invoice_xml**](IssuedEInvoicesApi.md#get_e_invoice_xml) | **GET** /c/{company_id}/issued_documents/{document_id}/e_invoice/xml | Get e-invoice XML
-[**send_e_invoice**](IssuedEInvoicesApi.md#send_e_invoice) | **POST** /c/{company_id}/issued_documents/{document_id}/e_invoice/send | Send the e-invoice
-[**verify_e_invoice_xml**](IssuedEInvoicesApi.md#verify_e_invoice_xml) | **GET** /c/{company_id}/issued_documents/{document_id}/e_invoice/xml_verify | Verify e-invoice XML
+[**get_e_invoice_rejection_reason**](IssuedEInvoicesApi.md#get_e_invoice_rejection_reason) | **GET** /c/{company_id}/issued_documents/{document_id}/e_invoice/error_reason | Get E-Invoice Rejection Reason
+[**get_e_invoice_xml**](IssuedEInvoicesApi.md#get_e_invoice_xml) | **GET** /c/{company_id}/issued_documents/{document_id}/e_invoice/xml | Get E-Invoice XML
+[**send_e_invoice**](IssuedEInvoicesApi.md#send_e_invoice) | **POST** /c/{company_id}/issued_documents/{document_id}/e_invoice/send | Send E-Invoice
+[**verify_e_invoice_xml**](IssuedEInvoicesApi.md#verify_e_invoice_xml) | **GET** /c/{company_id}/issued_documents/{document_id}/e_invoice/xml_verify | Verify E-Invoice XML
 
 
 
 ## get_e_invoice_rejection_reason
 
-> crate::models::GetEInvoiceRejectionReason get_e_invoice_rejection_reason(company_id, document_id)
-Get e-invoice rejection reason
+> models::GetEInvoiceRejectionReason get_e_invoice_rejection_reason(company_id, document_id)
+Get E-Invoice Rejection Reason
 
 Get e-invoice rejection reason
 
@@ -28,7 +28,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetEInvoiceRejectionReason**](GetEInvoiceRejectionReason.md)
+[**models::GetEInvoiceRejectionReason**](GetEInvoiceRejectionReason.md)
 
 ### Authorization
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Required | Notes
 ## get_e_invoice_xml
 
 > String get_e_invoice_xml(company_id, document_id, include_attachment)
-Get e-invoice XML
+Get E-Invoice XML
 
 Downloads the e-invoice in XML format.
 
@@ -76,8 +76,8 @@ Name | Type | Description  | Required | Notes
 
 ## send_e_invoice
 
-> crate::models::SendEInvoiceResponse send_e_invoice(company_id, document_id, send_e_invoice_request)
-Send the e-invoice
+> models::SendEInvoiceResponse send_e_invoice(company_id, document_id, send_e_invoice_request)
+Send E-Invoice
 
 Sends the e-invoice to SDI.
 
@@ -92,7 +92,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SendEInvoiceResponse**](SendEInvoiceResponse.md)
+[**models::SendEInvoiceResponse**](SendEInvoiceResponse.md)
 
 ### Authorization
 
@@ -108,8 +108,8 @@ Name | Type | Description  | Required | Notes
 
 ## verify_e_invoice_xml
 
-> crate::models::VerifyEInvoiceXmlResponse verify_e_invoice_xml(company_id, document_id)
-Verify e-invoice XML
+> models::VerifyEInvoiceXmlResponse verify_e_invoice_xml(company_id, document_id)
+Verify E-Invoice XML
 
 Verifies the e-invoice XML format. Checks if all of the mandatory fields are filled and compliant to the right format.
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::VerifyEInvoiceXmlResponse**](VerifyEInvoiceXmlResponse.md)
+[**models::VerifyEInvoiceXmlResponse**](VerifyEInvoiceXmlResponse.md)
 
 ### Authorization
 

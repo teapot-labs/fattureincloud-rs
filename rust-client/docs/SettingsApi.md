@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 ## create_payment_account
 
-> crate::models::CreatePaymentAccountResponse create_payment_account(company_id, create_payment_account_request)
+> models::CreatePaymentAccountResponse create_payment_account(company_id, create_payment_account_request)
 Create Payment Account
 
 Creates a new payment account.
@@ -36,7 +36,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreatePaymentAccountResponse**](CreatePaymentAccountResponse.md)
+[**models::CreatePaymentAccountResponse**](CreatePaymentAccountResponse.md)
 
 ### Authorization
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_payment_method
 
-> crate::models::CreatePaymentMethodResponse create_payment_method(company_id, create_payment_method_request)
+> models::CreatePaymentMethodResponse create_payment_method(company_id, create_payment_method_request)
 Create Payment Method
 
 Creates a new payment method.
@@ -67,7 +67,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreatePaymentMethodResponse**](CreatePaymentMethodResponse.md)
+[**models::CreatePaymentMethodResponse**](CreatePaymentMethodResponse.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_vat_type
 
-> crate::models::CreateVatTypeResponse create_vat_type(company_id, create_vat_type_request)
+> models::CreateVatTypeResponse create_vat_type(company_id, create_vat_type_request)
 Create Vat Type
 
 Creates a vat type.
@@ -98,7 +98,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateVatTypeResponse**](CreateVatTypeResponse.md)
+[**models::CreateVatTypeResponse**](CreateVatTypeResponse.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_payment_account
 
-> crate::models::GetPaymentAccountResponse get_payment_account(company_id, payment_account_id, fields, fieldset)
+> models::GetPaymentAccountResponse get_payment_account(company_id, payment_account_id, fields, fieldset)
 Get Payment Account
 
 Gets the specified payment account.
@@ -224,7 +224,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetPaymentAccountResponse**](GetPaymentAccountResponse.md)
+[**models::GetPaymentAccountResponse**](GetPaymentAccountResponse.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_payment_method
 
-> crate::models::GetPaymentMethodResponse get_payment_method(company_id, payment_method_id, fields, fieldset)
+> models::GetPaymentMethodResponse get_payment_method(company_id, payment_method_id, fields, fieldset)
 Get Payment Method
 
 Gets the specified payment method.
@@ -257,7 +257,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetPaymentMethodResponse**](GetPaymentMethodResponse.md)
+[**models::GetPaymentMethodResponse**](GetPaymentMethodResponse.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_vat_type
 
-> crate::models::GetVatType get_vat_type(company_id, vat_type_id)
+> models::GetVatType get_vat_type(company_id, vat_type_id)
 Get Vat Type
 
 Gets the specified vat type.
@@ -288,7 +288,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetVatType**](GetVatType.md)
+[**models::GetVatType**](GetVatType.md)
 
 ### Authorization
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_payment_account
 
-> crate::models::ModifyPaymentAccountResponse modify_payment_account(company_id, payment_account_id, modify_payment_account_request)
+> models::ModifyPaymentAccountResponse modify_payment_account(company_id, payment_account_id, modify_payment_account_request)
 Modify Payment Account
 
 Modifies the specified payment account.
@@ -320,7 +320,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyPaymentAccountResponse**](ModifyPaymentAccountResponse.md)
+[**models::ModifyPaymentAccountResponse**](ModifyPaymentAccountResponse.md)
 
 ### Authorization
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_payment_method
 
-> crate::models::ModifyPaymentMethodResponse modify_payment_method(company_id, payment_method_id, modify_payment_method_request)
+> models::ModifyPaymentMethodResponse modify_payment_method(company_id, payment_method_id, modify_payment_method_request)
 Modify Payment Method
 
 Modifies the specified payment method.
@@ -352,7 +352,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyPaymentMethodResponse**](ModifyPaymentMethodResponse.md)
+[**models::ModifyPaymentMethodResponse**](ModifyPaymentMethodResponse.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_vat_type
 
-> crate::models::ModifyVatTypeResponse modify_vat_type(company_id, vat_type_id, modify_vat_type_request)
+> models::ModifyVatTypeResponse modify_vat_type(company_id, vat_type_id, modify_vat_type_request)
 Modify Vat Type
 
 Modifies the specified vat type.
@@ -384,7 +384,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyVatTypeResponse**](ModifyVatTypeResponse.md)
+[**models::ModifyVatTypeResponse**](ModifyVatTypeResponse.md)
 
 ### Authorization
 
