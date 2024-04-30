@@ -2,6 +2,10 @@ name: Publish SDK Crate
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
   ##push:
   ##  branches: [ master ]
   ##  paths:
@@ -9,6 +13,7 @@ on:
 
 jobs:
     publish-crate:
+        if: ${{ github.event.pull_request.merged }}
         runs-on: ubuntu-latest
         permissions:
             contents: read
