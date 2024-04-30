@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **name** | **String** | Payment method name | 
 **r#type** | Option<**String**> | Payment method type | [optional][default to Standard]
 **is_default** | Option<**bool**> | Payment method is default | [optional]
-**default_payment_account** | Option<[**crate::models::PaymentAccount1**](PaymentAccount_1.md)> |  | [optional]
-**details** | Option<[**Vec<crate::models::PaymentMethodDetails>**](PaymentMethodDetails.md)> | Payment method details | [optional]
+**default_payment_account** | Option<[**models::PaymentAccount1**](PaymentAccount_1.md)> |  | [optional]
+**details** | Option<[**Vec<models::PaymentMethodDetails>**](PaymentMethodDetails.md)> | Payment method details | [optional]
 **bank_iban** | Option<**String**> | Payment method bank iban | [optional]
 **bank_name** | Option<**String**> | Payment method bank name | [optional]
 **bank_beneficiary** | Option<**String**> | Payment method bank beneficiary | [optional]

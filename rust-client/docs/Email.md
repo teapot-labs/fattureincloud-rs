@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **recipient_status** | Option<**String**> | Email recipient status | [optional]
 **recipient_date** | Option<**String**> | Email recipient date | [optional]
 **kind** | Option<**String**> | Email kind | [optional]
-**attachments** | Option<[**Vec<crate::models::EmailAttachment>**](EmailAttachment.md)> | Email attachments | [optional]
+**attachments** | Option<[**Vec<models::EmailAttachment>**](EmailAttachment.md)> | Email attachments | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

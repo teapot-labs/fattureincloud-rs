@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## create_cashbook_entry
 
-> crate::models::CreateCashbookEntryResponse create_cashbook_entry(company_id, create_cashbook_entry_request)
+> models::CreateCashbookEntryResponse create_cashbook_entry(company_id, create_cashbook_entry_request)
 Create Cashbook Entry
 
 Creates a new cashbook entry.
@@ -29,7 +29,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateCashbookEntryResponse**](CreateCashbookEntryResponse.md)
+[**models::CreateCashbookEntryResponse**](CreateCashbookEntryResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_cashbook_entry
 
-> crate::models::GetCashbookEntryResponse get_cashbook_entry(company_id, document_id, fields, fieldset)
+> models::GetCashbookEntryResponse get_cashbook_entry(company_id, document_id, fields, fieldset)
 Get Cashbook Entry
 
 Gets the specified cashbook entry.
@@ -93,7 +93,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetCashbookEntryResponse**](GetCashbookEntryResponse.md)
+[**models::GetCashbookEntryResponse**](GetCashbookEntryResponse.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_cashbook_entries
 
-> crate::models::ListCashbookEntriesResponse list_cashbook_entries(company_id, date_from, date_to, year, r#type, payment_account_id)
+> models::ListCashbookEntriesResponse list_cashbook_entries(company_id, date_from, date_to, year, r#type, payment_account_id)
 List Cashbook Entries
 
 Lists the cashbook entries.
@@ -128,7 +128,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListCashbookEntriesResponse**](ListCashbookEntriesResponse.md)
+[**models::ListCashbookEntriesResponse**](ListCashbookEntriesResponse.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_cashbook_entry
 
-> crate::models::ModifyCashbookEntryResponse modify_cashbook_entry(company_id, document_id, modify_cashbook_entry_request)
+> models::ModifyCashbookEntryResponse modify_cashbook_entry(company_id, document_id, modify_cashbook_entry_request)
 Modify Cashbook Entry
 
 Modifies the specified cashbook entry.
@@ -160,7 +160,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyCashbookEntryResponse**](ModifyCashbookEntryResponse.md)
+[**models::ModifyCashbookEntryResponse**](ModifyCashbookEntryResponse.md)
 
 ### Authorization
 

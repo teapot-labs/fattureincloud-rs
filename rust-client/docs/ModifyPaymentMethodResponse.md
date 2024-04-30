@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | Option<[**crate::models::PaymentMethod6**](PaymentMethod_6.md)> |  | [optional]
+**data** | Option<[**models::PaymentMethod5**](PaymentMethod_5.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

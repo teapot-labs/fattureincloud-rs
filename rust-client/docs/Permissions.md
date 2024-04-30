@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 **dic_employees** | Option<**String**> | Permission level | [optional]
 **dic_settings** | Option<**String**> | Permission level | [optional]
 **dic_timesheet** | Option<**String**> | Permission level | [optional]
-**fic_issued_documents_detailed** | Option<[**crate::models::PermissionsFicIssuedDocumentsDetailed**](Permissions_fic_issued_documents_detailed.md)> |  | [optional]
+**fic_issued_documents_detailed** | Option<[**models::PermissionsFicIssuedDocumentsDetailed**](Permissions_fic_issued_documents_detailed.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

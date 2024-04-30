@@ -4,14 +4,14 @@ All URIs are relative to *https://api-v2.fattureincloud.it*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**list_emails**](EmailsApi.md#list_emails) | **GET** /c/{company_id}/emails | List emails
+[**list_emails**](EmailsApi.md#list_emails) | **GET** /c/{company_id}/emails | List Emails
 
 
 
 ## list_emails
 
-> crate::models::ListEmailsResponse list_emails(company_id)
-List emails
+> models::ListEmailsResponse list_emails(company_id)
+List Emails
 
 List Emails.
 
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListEmailsResponse**](ListEmailsResponse.md)
+[**models::ListEmailsResponse**](ListEmailsResponse.md)
 
 ### Authorization
 

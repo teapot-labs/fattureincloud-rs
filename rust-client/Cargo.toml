@@ -1,18 +1,18 @@
 [package]
 name = "fattureincloud-rs"
-version = "2.0.29"
+version = "2.0.32"
 authors = ["info@fattureincloud.it"]
 description = "Connect your software with Fatture in Cloud, the invoicing platform chosen by more than 500.000 businesses in Italy.   The Fatture in Cloud API is based on REST, and makes possible to interact with the user related data prior authorization via OAuth2 protocol."
 license = "MIT"
 edition = "2018"
 
 [dependencies]
-serde = "^1.0.190"
-serde_derive = "^1.0.190"
-serde_with = "^3.4.0"
-serde_json = "^1.0.107"
-url = "^2.4.1"
-uuid = { version = "^1.5.0", features = ["serde", "v4"] }
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_with = { version = "^3", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+url = "^2.2"
+uuid = { version = "^1.0", features = ["serde", "v4"] }
 [dependencies.reqwest]
-version = "^0.11.22"
+version = "^0.11"
 features = ["json", "multipart"]

@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 ## create_receipt
 
-> crate::models::CreateReceiptResponse create_receipt(company_id, create_receipt_request)
+> models::CreateReceiptResponse create_receipt(company_id, create_receipt_request)
 Create Receipt
 
 Creates a new receipt.
@@ -31,7 +31,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateReceiptResponse**](CreateReceiptResponse.md)
+[**models::CreateReceiptResponse**](CreateReceiptResponse.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_receipt
 
-> crate::models::GetReceiptResponse get_receipt(company_id, document_id, fields, fieldset)
+> models::GetReceiptResponse get_receipt(company_id, document_id, fields, fieldset)
 Get Receipt
 
 Gets the specified receipt.
@@ -95,7 +95,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetReceiptResponse**](GetReceiptResponse.md)
+[**models::GetReceiptResponse**](GetReceiptResponse.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_receipt_pre_create_info
 
-> crate::models::GetReceiptPreCreateInfoResponse get_receipt_pre_create_info(company_id)
+> models::GetReceiptPreCreateInfoResponse get_receipt_pre_create_info(company_id)
 Get Receipt Pre-Create Info
 
 Retrieves the information useful while creating a new receipt.
@@ -125,7 +125,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetReceiptPreCreateInfoResponse**](GetReceiptPreCreateInfoResponse.md)
+[**models::GetReceiptPreCreateInfoResponse**](GetReceiptPreCreateInfoResponse.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_receipts_monthly_totals
 
-> crate::models::GetReceiptsMonthlyTotalsResponse get_receipts_monthly_totals(company_id, r#type, year)
+> models::GetReceiptsMonthlyTotalsResponse get_receipts_monthly_totals(company_id, r#type, year)
 Get Receipts Monthly Totals
 
 Returns the monthly totals by year and receipt type.
@@ -157,7 +157,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetReceiptsMonthlyTotalsResponse**](GetReceiptsMonthlyTotalsResponse.md)
+[**models::GetReceiptsMonthlyTotalsResponse**](GetReceiptsMonthlyTotalsResponse.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_receipts
 
-> crate::models::ListReceiptsResponse list_receipts(company_id, fields, fieldset, page, per_page, sort, q)
+> models::ListReceiptsResponse list_receipts(company_id, fields, fieldset, page, per_page, sort, q)
 List Receipts
 
 Lists the receipts.
@@ -193,7 +193,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListReceiptsResponse**](ListReceiptsResponse.md)
+[**models::ListReceiptsResponse**](ListReceiptsResponse.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_receipt
 
-> crate::models::ModifyReceiptResponse modify_receipt(company_id, document_id, modify_receipt_request)
+> models::ModifyReceiptResponse modify_receipt(company_id, document_id, modify_receipt_request)
 Modify Receipt
 
 Modifies the specified receipt.
@@ -225,7 +225,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyReceiptResponse**](ModifyReceiptResponse.md)
+[**models::ModifyReceiptResponse**](ModifyReceiptResponse.md)
 
 ### Authorization
 

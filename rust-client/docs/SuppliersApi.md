@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## create_supplier
 
-> crate::models::CreateSupplierResponse create_supplier(company_id, create_supplier_request)
+> models::CreateSupplierResponse create_supplier(company_id, create_supplier_request)
 Create Supplier
 
 Creates a new supplier.
@@ -29,7 +29,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateSupplierResponse**](CreateSupplierResponse.md)
+[**models::CreateSupplierResponse**](CreateSupplierResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_supplier
 
-> crate::models::GetSupplierResponse get_supplier(company_id, supplier_id, fields, fieldset)
+> models::GetSupplierResponse get_supplier(company_id, supplier_id, fields, fieldset)
 Get Supplier
 
 Gets the specified supplier.
@@ -93,7 +93,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetSupplierResponse**](GetSupplierResponse.md)
+[**models::GetSupplierResponse**](GetSupplierResponse.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_suppliers
 
-> crate::models::ListSuppliersResponse list_suppliers(company_id, fields, fieldset, sort, page, per_page, q)
+> models::ListSuppliersResponse list_suppliers(company_id, fields, fieldset, sort, page, per_page, q)
 List Suppliers
 
 Lists the suppliers.
@@ -129,7 +129,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListSuppliersResponse**](ListSuppliersResponse.md)
+[**models::ListSuppliersResponse**](ListSuppliersResponse.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_supplier
 
-> crate::models::ModifySupplierResponse modify_supplier(company_id, supplier_id, modify_supplier_request)
+> models::ModifySupplierResponse modify_supplier(company_id, supplier_id, modify_supplier_request)
 Modify Supplier
 
 Modifies the specified supplier.
@@ -161,7 +161,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifySupplierResponse**](ModifySupplierResponse.md)
+[**models::ModifySupplierResponse**](ModifySupplierResponse.md)
 
 ### Authorization
 

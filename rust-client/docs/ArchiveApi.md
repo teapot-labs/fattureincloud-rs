@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 ## create_archive_document
 
-> crate::models::CreateArchiveDocumentResponse create_archive_document(company_id, create_archive_document_request)
+> models::CreateArchiveDocumentResponse create_archive_document(company_id, create_archive_document_request)
 Create Archive Document
 
 Creates a new archive document.
@@ -30,7 +30,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::CreateArchiveDocumentResponse**](CreateArchiveDocumentResponse.md)
+[**models::CreateArchiveDocumentResponse**](CreateArchiveDocumentResponse.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_archive_document
 
-> crate::models::GetArchiveDocumentResponse get_archive_document(company_id, document_id, fields, fieldset)
+> models::GetArchiveDocumentResponse get_archive_document(company_id, document_id, fields, fieldset)
 Get Archive Document
 
 Gets the specified archive document.
@@ -94,7 +94,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GetArchiveDocumentResponse**](GetArchiveDocumentResponse.md)
+[**models::GetArchiveDocumentResponse**](GetArchiveDocumentResponse.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_archive_documents
 
-> crate::models::ListArchiveDocumentsResponse list_archive_documents(company_id, fields, fieldset, sort, page, per_page, q)
+> models::ListArchiveDocumentsResponse list_archive_documents(company_id, fields, fieldset, sort, page, per_page, q)
 List Archive Documents
 
 Lists the archive documents.
@@ -130,7 +130,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ListArchiveDocumentsResponse**](ListArchiveDocumentsResponse.md)
+[**models::ListArchiveDocumentsResponse**](ListArchiveDocumentsResponse.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_archive_document
 
-> crate::models::ModifyArchiveDocumentResponse modify_archive_document(company_id, document_id, modify_archive_document_request)
+> models::ModifyArchiveDocumentResponse modify_archive_document(company_id, document_id, modify_archive_document_request)
 Modify Archive Document
 
 Modifies the specified archive document.
@@ -162,7 +162,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ModifyArchiveDocumentResponse**](ModifyArchiveDocumentResponse.md)
+[**models::ModifyArchiveDocumentResponse**](ModifyArchiveDocumentResponse.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Required | Notes
 
 ## upload_archive_document_attachment
 
-> crate::models::UploadArchiveAttachmentResponse upload_archive_document_attachment(company_id, filename, attachment)
+> models::UploadArchiveAttachmentResponse upload_archive_document_attachment(company_id, filename, attachment)
 Upload Archive Document Attachment
 
 Uploads an attachment destined to an archive document. The actual association between the document and the attachment must be implemented separately, using the returned token.
@@ -194,7 +194,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UploadArchiveAttachmentResponse**](UploadArchiveAttachmentResponse.md)
+[**models::UploadArchiveAttachmentResponse**](UploadArchiveAttachmentResponse.md)
 
 ### Authorization
 
