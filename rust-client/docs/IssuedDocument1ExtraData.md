@@ -4,7 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**show_sofort_button** | Option<**bool**> |  | [optional]
 **multifatture_sent** | Option<**i32**> |  | [optional]
 **ts_communication** | Option<**bool**> | Send issued document to \"Sistema Tessera Sanitaria\" | [optional]
 **ts_flag_tipo_spesa** | Option<**f64**> | Issued document ts \"tipo spesa\" [TK, FC, FV, SV,SP, AD, AS, ECG, SR] | [optional]
