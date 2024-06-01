@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **vat_kind** | Option<**String**> | Vat kind [esigibilità IVA] | [optional]
-**original_document_type** | Option<**String**> | Issued document original document type | [optional][default to Ordine]
+**original_document_type** | Option<**String**> | Issued document original document type | [optional]
 **od_number** | Option<**String**> | E-invoice original document number | [optional]
 **od_date** | Option<[**String**](string.md)> | E-invoice original document date | [optional]
 **cig** | Option<**String**> | E-invoice CIG | [optional]
